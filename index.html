@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>ToDoList</title>
+</head>
+<body>
+    <div class="container">
+    <div class="main_elements">
+        <h1>To-do List:</h1>
+        <div class="elems">
+                <input onkeyup="keyPress(event)" type="text" id="newTask" placeholder="Input your case...">
+                <button id="butt" onclick="onClickButton()">Add</button>
+                <button class="reset" onclick="reset()">Clear</button>
+                <button class="remove" onclick="remove()">Remove all</button>
+        </div>
+    </div>
+
+    <div class="elems_wrapper" id="content_page"></div>
+</div>
+</body>
+</html>
